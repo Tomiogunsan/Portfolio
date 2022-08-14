@@ -1,0 +1,117 @@
+.contact{
+    padding: 20px;
+}
+
+.contact-text{
+    color: #ffffff;
+    display: inline-block;
+    line-height: 1em;
+    letter-spacing: 0.5px;
+    position: relative;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    border-bottom: 2px solid var(--yellow-theme-main-color);
+}
+
+.contact-text::before,
+.contact-text::after{
+    position: absolute;
+    width: 2px;
+    content: '';
+    height: 5px;
+    background-color: var(--yellow-theme-main-color);
+    bottom: -1px;
+
+}
+.contact-text::before{
+    left: 0;
+}
+
+.contact-text::after{
+    right: 0;
+}
+
+.contact-form{
+    margin-top: 30px;
+}
+
+.contact-form-controlswrapper{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:40px;
+    margin-bottom: 30px;
+}
+
+.contact-form-controlswrapper div{
+    position:relative;
+
+}
+
+.inputName, .inputEmail, .inputDescription {
+    width: 100%;
+    border: 2px solid var(--yellow-theme-main-color);
+    padding: 16px 12px;
+    transition: all 0.5s ease;
+    position: relative;
+    background-color: transparent;
+    color: #ffffff;
+}
+
+.nameLabel, .emailLabel, .descriptionLabel{
+    font-weight: 500;
+    position: absolute;
+    top: 7px;
+    left: 12px;
+    transition: all 0.2s ease;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.inputName:focus, 
+.inputEmail:focus, 
+.inputDescription:focus{
+    outline: none;
+
+}
+
+.inputName:focus + .nameLabel,
+.inputName:valid + .nameLabel,
+.inputEmail:focus + .emailLabel,
+.inputEmail:valid + .emailLabel,
+.inputDescription:focus + .descriptionLabel,
+.inputDescription:valid + .descriptionLabel{
+    font-size: 18px;
+    top: -25px;
+    left: 0px;
+}
+
+.contact-form button{
+    cursor: pointer;
+    padding: 10px 70px;
+    font-size: 2rem;
+    background: transparent;
+    color:var(--yellow-theme-main-color);
+    border: 1.5px solid var(--yellow-theme-main-color);
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+.contact-form button:hover{
+    color:black;
+    background: var(--yellow-theme-main-color);
+
+}
+
+@media only screen and (max-width : 768px){
+    .contact-form{
+        text-align: center;
+    } 
+
+    .contact-form-controlswrapper{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
+}
+
+

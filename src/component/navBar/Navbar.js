@@ -47,7 +47,7 @@ return(
                 </Link>
 
             </div>
-            <ul className={ `navbar_container_menu ${toggleIcon ? 'active' : ""}`}>
+            <ul className={ `navbar_container_menu ${toggleIcon ? 'active' : ""}`} onClick={handleToggleIcon}>
                 {
                     data.map((item, key) => (
                         <li  key={key} className='navbar_container_menu_item'>

@@ -1,19 +1,22 @@
 import React ,{ useState} from 'react';
 import PageHeaderContent from './PageHeaderContent/PageHeaderContent';
 import {BsInfoCircleFill} from 'react-icons/bs';
-import ImageOne from './images/foodOrder.jpg';
-import ImageTwo from './images/weatherImage.jpg';
-import ImageThree from './images/coffee2a.jpg';
-import ImageFour from './images/cursionB.jpg';
+import ImageOne from './images/power-list.jpg';
+import ImageTwo from './images/weather.jpg';
+import ImageThree from './images/bmi2.jpg';
+import ImageFour from './images/residence-website.jpg';
+import ImageFive from './images/fashion2.jpg';
+import ImageSix from './images/pizza3.jpg';
+import ImageSeven from './images/coin-tracker.jpg'
 import classes from './Portfolio.module.css';
 
 
 const portfolioData = [
     {
     id: 2,
-    name: 'Food Order App',
+    name: 'Power List App',
     image: ImageOne,
-    link:'https://amazing-kheer-661004.netlify.app',
+    link:'https://stalwart-kulfi-8cb0b5.netlify.app',
 },
 {
     id: 2,
@@ -22,17 +25,38 @@ const portfolioData = [
     link: 'https://verdant-rugelach-a37cee.netlify.app'
 },
 {
-    id: 3,
-    name: 'Coffee shop Design',
+    id: 2,
+    name: 'BMI Calculator',
     image: ImageThree,
-    link: 'https://sparkly-taffy-84748f.netlify.app'
+    link: 'https://transcendent-moonbeam-981337.netlify.app'
 },
 {
     id: 3,
-    name: 'Furniture Design',
+    name: 'Residence Website',
     image: ImageFour,
-    link: 'https://stalwart-melomakarona-401fc5.netlify.app'
-}
+    link: 'https://residence-website.vercel.app/'
+},
+{
+    id: 3,
+    name: 'Fashion Website',
+    image: ImageFive,
+    link: 'https://magnificent-kleicha-102f4c.netlify.app'
+},
+
+{
+    id: 2,
+    name: 'Pizza Order App',
+    image: ImageSix,
+    link:'https://monumental-cendol-4ac3d9.netlify.app',
+},
+{
+    id: 2,
+    name: 'Crypto Tracker App',
+    image: ImageSeven,
+    link:'https://crypto-tracker-sx1k.vercel.app/',
+},
+
+
 
 ];
 
